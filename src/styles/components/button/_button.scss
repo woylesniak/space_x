@@ -1,0 +1,68 @@
+.button {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 24px;
+  font-size: 14px;
+  line-height: 16px;
+  border: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  text-decoration: none;
+  white-space: nowrap;
+  appearance: none;
+  background-color: transparent;
+  padding: 15px 41px;
+  z-index: 999;
+
+  &--primary {
+    background-color: $primary;
+  }
+
+  &--outline {
+    border: 1px solid $primary;
+    background-color: none;
+
+    &-primary {
+      color: $primary;
+    }
+  }
+
+  &--contained {
+    border: 1px solid $primary;
+    background-color: $primary;
+
+    &-dark {
+      color: $dark;
+    }
+  }
+
+  &--circle {
+    padding: 12px;
+    border-radius: 50%;
+
+    &__label {
+      display: flex;
+    }
+
+    svg {
+      transition: transform 0.3s ease-in-out;
+      font-size: 22px;
+      color: $dark;
+    }
+
+    &:hover {
+      svg {
+        transition: transform 0.3s ease-in-out;
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &--active {
+    background-color: $white;
+  }
+}

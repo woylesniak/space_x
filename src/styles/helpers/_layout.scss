@@ -1,0 +1,10 @@
+@at-root html body {
+  .full {
+    &-height {
+      height: 100% !important;
+    }
+    &-width {
+      width: 100% !important;
+    }
+  }
+}

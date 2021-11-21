@@ -1,0 +1,25 @@
+.input {
+  &--dynamic {
+    input {
+      padding-top: 16px;
+
+      &:-webkit-autofill .input__label,
+      &:-webkit-autofill:hover .input__label,
+      &:-webkit-autofill:focus .input__label,
+      &:focus ~ .input__label,
+      &:not(:placeholder-shown) ~ .input__label {
+        position: absolute;
+        top: 8px;
+        font-size: 13px;
+        line-height: 16px;
+      }
+
+      &:-webkit-autofill,
+      &:-webkit-autofill::first-line {
+        font-weight: 700;
+        font-family: $font-body;
+        font-size: 16px;
+      }
+    }
+  }
+}

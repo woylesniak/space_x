@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background: transparent linear-gradient(180deg, #f5f5f5 0%, #f5f5f500 100%) 0%
+    0% no-repeat padding-box;
+  width: 100%;
+  max-width: 536px;
+  border-radius: 32px;
+  margin-bottom: 48px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 32px;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 472px;
+    border: 2px solid $primary;
+    border-radius: 32px;
+    border: 2px solid #1dffe0;
+    overflow: hidden;
+  }
+
+  &__content {
+    &--date {
+      padding: 32px 0 16px;
+    }
+  }
+
+  &__action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 39px;
+    }
+  }
+}

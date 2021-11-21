@@ -1,0 +1,21 @@
+.typography {
+  &--primary {
+    color: $primary;
+  }
+
+  &--dark {
+    color: $dark;
+  }
+
+  &--soft {
+    color: $soft;
+  }
+
+  &--white {
+    color: $white;
+  }
+
+  &--light {
+    color: $light;
+  }
+}

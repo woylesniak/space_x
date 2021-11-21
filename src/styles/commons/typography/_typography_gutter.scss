@@ -1,0 +1,8 @@
+$base-typography-gutter-bottom: 4px;
+$gutter-bottom-increment: 4px;
+
+@for $i from 1 through 7 {
+	.typography--gutter-bottom-#{$i} {
+		margin-bottom: $base-typography-gutter-bottom + ($gutter-bottom-increment * $i);
+	}
+}

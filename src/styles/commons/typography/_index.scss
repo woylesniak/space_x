@@ -1,0 +1,26 @@
+.typography {
+  margin: 0;
+  white-space: pre-line;
+
+  &--bold {
+    font-weight: 700 !important;
+  }
+
+  &--h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &--body1 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &--body2 {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}
+
+@import 'typography_colors';
+@import 'typography_align';

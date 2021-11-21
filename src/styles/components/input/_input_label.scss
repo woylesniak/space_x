@@ -1,0 +1,12 @@
+.input {
+  &__label {
+    position: absolute;
+    top: 22px;
+    left: 32px;
+    font-family: $font-body;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    transition: all 0.1s linear;
+  }
+}

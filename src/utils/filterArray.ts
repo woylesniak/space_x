@@ -1,0 +1,1 @@
+export const filterArray = (elements: any[]) => elements.filter((element) => element.ships.length > 0 && element.ships[0].image !== null);
